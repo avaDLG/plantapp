@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'plantapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'plant_db',
+        'USER': 'ava',
+        'PASSWORD': 'SuperSecretPassword2024',
+        'HOST': 'planttrackerdb.cfke2ygo2bpn.us-east-2.rds.amazonaws.com',
+        'PORT': '3306'
     }
 }
 
